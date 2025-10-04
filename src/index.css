@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme{
+    --color-main: #2C3E50;
+    --color-secondary: #1ABC9C; 
+}
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+
+.active{
+@apply bg-secondary text-white py-2.5 px-5 rounded-lg;
+}
+.custom-modal {
+  @apply fixed inset-0 bg-main  flex items-center justify-center z-50;
+}
+.modal-img {
+  @apply max-w-full max-h-full rounded-lg shadow-lg;
+}
+
